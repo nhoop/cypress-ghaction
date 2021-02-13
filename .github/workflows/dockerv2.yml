@@ -17,5 +17,6 @@ jobs:
           file: ./Dockerfile
           pull: true
           push: true
+          repository: /nhoop/cypress-ghaction/appv2
           tags: nhoop/cypress-ghaction:latest
 
