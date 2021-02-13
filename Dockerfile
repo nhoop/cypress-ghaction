@@ -13,4 +13,4 @@ RUN apk add --no-cache --virtual .gyp \
 
 COPY . /appvue
 
-CMD ["npm","start"]
+CMD ["npm", "run", "serve"]
