@@ -1,0 +1,17 @@
+name: Publish docker image
+on: push
+jobs:
+  push_to_registries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Push to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: /nhoop/cypress-ghaction/demo
+          tag_with_ref: true
