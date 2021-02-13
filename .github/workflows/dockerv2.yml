@@ -1,4 +1,4 @@
-name: Publish docker image
+name: Publish docker image v2
 on: push
 jobs:
   push_to_registries:
