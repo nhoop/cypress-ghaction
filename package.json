@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cypress": "^6.4.0",
+    "express": "^4.17.1"
+  }
+}
