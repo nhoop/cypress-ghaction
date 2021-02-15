@@ -66,14 +66,5 @@ context('Actions', () => {
     divHello.contains('h3', 'Ecosystem').should('exist')
 
     ecoSysteem.forEach(item => cy.contains('div.hello ul li a', item).should('exist'))
-
-    // ecoSysteem.forEach(item => divHello.contains('ul li a', item).should('exist'))
-
-    // aHello = divHello.get('ul li a')
-
-    // aHello.contains('vue-router').should('exist')
-
-    // ecoSysteem.forEach((item) => aHello.contains(item).should('exist'))
-
   })
 })
